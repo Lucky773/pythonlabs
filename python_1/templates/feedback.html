@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма відгуку</title>
+</head>
+<body>
+    <h1>Форма відгуку</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>{{ form.name.label }}</p>
+        {{ form.name(size=20) }}
+        <p>{{ form.feedback.label }}</p>
+        {{ form.feedback(rows=4) }}
+        {{ form.submit() }}
+    </form>
+
+    <h2>Відгуки:</h2>
+    <ul>
+        {% for entry in feedback_entries %}
+            <li>{{ entry.name }} написав(ла): {{ entry.feedback }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

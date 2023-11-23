@@ -1,0 +1,57 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    background-color: cadetblue;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    background-color: #733e3e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(8, 6, 6, 0.1);
+    width: 50%;
+    margin: 20px auto; 
+}
+
+h1 {
+    font-size: 30px;
+}
+p{
+    font-size: 15px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+option {
+    text-align: center;
+}
+
+select {
+    width: 100%; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #4caf50; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    form {
+        padding: 10px;
+    }
+    input[type="text"],
+    select {
+        width: 100%;
+    }
+}

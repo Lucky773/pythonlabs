@@ -16,10 +16,10 @@ h2{
     font-size: 35px;
 }
 
-.MainImage {
-  background-image: url('/lab3/static/images/main_image.jpg');
-  width: 450px;
-  height: 550px;
+.main_image {
+  background-image: url(../images/main_image.jpg);
+  width: 500px;
+  height: 600px;
   border-style: dotted;
   border: 2px solid #c9f0ff;
     border-radius: 5px;
@@ -34,18 +34,18 @@ ul li {
 }
 
 ul li::before {
-    content: "";
+    content: attr();
     margin-right: 10px;
     display: inline-block;
     width: 15px;
     height: 15px;
     background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fuk%2Fsearch%3Fq%3D%25D1%2596%25D0%25BD%25D0%25B4%25D0%25B8%25D0%25BA%25D0%25B0%25D1%2582%25D0%25BE%25D1%2580%2B%25D0%25A1%25D1%2582%25D1%2580%25D1%2596%25D0%25BB%25D0%25BA%25D0%25B0&psig=AOvVaw2vS0oAlpJI2ZbZX1-r4kDM&ust=1701390236632000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMjH6dW66oIDFQAAAAAdAAAAABAJ');
-    background-size: cover;
 }
 
 ul li a {
     text-decoration: none;
     color: #0077B5;
+    font-size: 20px;
 }
 
 table{
@@ -73,4 +73,11 @@ p{
     background-color: #5fa7c4;
     border: 3px solid #121516;
     border-radius: 10px;
+}
+footer {
+    margin-top: 90%;
+}
+
+a:hover{
+    background-color: white;
 }

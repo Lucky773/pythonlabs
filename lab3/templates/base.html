@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
 <center>
     <header>
     <h1>Portfolio</h1>
         <nav>
-            <ul>
+            <ul >
                 <li><a href="{{url_for('page1')}}">Основна сторінка</a></li>
                 <li><a href="{{url_for('page2')}}">Про мене</a></li>
                 <li><a href="{{url_for('page3')}}">Контакти</a></li>
@@ -20,8 +20,8 @@
     </header>
 </center>
 <br>
-    <div class="table">
-        {% block table %}{% endblock %}
+    <div class="content">
+        {% block content %}{% endblock %}
     </div>
 <footer>
         OS: {{ os_info }}<br>

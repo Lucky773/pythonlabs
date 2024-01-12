@@ -8,6 +8,7 @@ from wtforms.validators import DataRequired, Length
 app = Flask(__name__)
 app.secret_key = 'bilka'
 
+
 # Load users from the JSON file
 def load_users():
     with open('clients.json', 'r') as f:

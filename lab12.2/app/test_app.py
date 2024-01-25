@@ -1,5 +1,4 @@
 import unittest
-import pytest
 from os.path import abspath, dirname
 import sys
 

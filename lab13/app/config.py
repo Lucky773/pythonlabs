@@ -16,6 +16,5 @@ class ConfigDebug(Config):
 
 
 class ConfigTesting(Config):
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///:memory:'
     TESTING = True
     WTF_CSRF_ENABLED = False
